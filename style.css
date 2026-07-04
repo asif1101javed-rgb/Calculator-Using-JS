@@ -1,0 +1,72 @@
+body {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    background: #000000;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+}
+
+.display {
+    height: 70px;
+    font-size: 30px;
+    text-align: right;
+    background: #222;
+    color: #fff;
+    border: none;
+}
+
+.display:focus {
+    background: #222;
+    color: #fff;
+    box-shadow: none;
+}
+
+.btn {
+    height: 60px;
+    font-size: 22px;
+    font-weight: blod;
+    border-radius: 12px;
+
+}
+
+.btn-light {
+    background: #f8f9fa;
+}
+
+.btn-primary {
+    background: #ff9500;
+    border: none;
+}
+
+.btn-success {
+    background: #28a745;
+    border: none;
+}
+
+.btn-danger {
+    background: #dc3545;
+    border: none;
+}
+
+.btn-warning {
+    color: #fff;
+}
+
+.btn-secondary {
+    background: #444;
+    border: none;
+    color: #fff;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
+}

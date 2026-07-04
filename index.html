@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous" />
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    </head>
+<body>
+    <div class="container mt-4">
+      <h1 class="text-center text-white mb-3">Calculator</h1>
+
+      <input type="text" class="form-control mb-3 display" readonly id="number" />
+
+      <div class="row g-2">
+        <div class="col-3">
+          <button class="btn btn-danger w-100" onclick="clearAll()">AC</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-warning w-100" onclick="backSpace()">DEL</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-secondary w-100">%</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-primary w-100" onclick="SetNum('/')">/</button>
+        </div>
+
+        <div class="col-3"><button class="btn btn-light w-100" onclick="SetNum(7)">7</button></div>
+        <div class="col-3"><button class="btn btn-light w-100"  onclick="SetNum(8)">8</button></div>
+        <div class="col-3"><button class="btn btn-light w-100"  onclick="SetNum(9)">9</button></div>
+        <div class="col-3">
+          <button class="btn btn-primary w-100" onclick="SetNum('*')">*</button>
+        </div>
+
+        <div class="col-3"><button class="btn btn-light w-100" onclick="SetNum(4)">4</button></div>
+        <div class="col-3"><button class="btn btn-light w-100" onclick="SetNum(5)">5</button></div>
+        <div class="col-3"><button class="btn btn-light w-100" onclick="SetNum(6)">6</button></div>
+        <div class="col-3">
+          <button class="btn btn-primary w-100" onclick="SetNum('-')">-</button>
+        </div>
+
+        <div class="col-3"><button class="btn btn-light w-100" onclick="SetNum(1)">1</button></div>
+        <div class="col-3"><button class="btn btn-light w-100" onclick="SetNum(2)">2</button></div>
+        <div class="col-3"><button class="btn btn-light w-100" onclick="SetNum(3)">3</button></div>
+        <div class="col-3">
+          <button class="btn btn-primary w-100" onclick="SetNum('+')">+</button>
+        </div>
+
+        <div class="col-3">
+          <button class="btn btn-secondary w-100">x²</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-secondary w-100">√</button>
+        </div>
+        <div class="col-3"><button class="btn btn-light w-100" onclick="SetNum(0)">0</button></div>
+        <div class="col-3">
+          <button class="btn btn-success w-100" onclick="equalResult()">=</button>
+        </div>
+
+        <div class="col-6">
+          <button class="btn btn-secondary w-100" onclick="SetNum('.')">.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-secondary w-100">±</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
